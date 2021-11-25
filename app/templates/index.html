@@ -9,7 +9,7 @@
         <h1>TecNova</h1>
     </div>
     <div class="col-8 m-auto pt-2 pb-2 text-center">
-        <a href="/form" class=" btn btn-success"> Adicionar </a>
+        <a href="/form" class="btn btn-success"> Adicionar </a>
     </div>
     <div class="col-8 m-auto pt-2 pb-2 text-center">
         <table class="table">
@@ -20,6 +20,10 @@
           <th scope="col">Telefone</th>
           <th scope="col">Endereço</th>
           <th scope="col">Maquina/Geladeira</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Valor</th>
+          <th scope="col">Data de Entrega</th>
+          <th scope="col">Forma de Pagamento</th>
           <th></th>
         </tr>
       </thead>
@@ -31,13 +35,17 @@
           <td>{{dbs.telefoneCliente}}</td>
           <td>{{dbs.enderecoCliente}}</td>
           <td>{{dbs.eletrodomestico}}</td>
+          <td>{{dbs.marcaAparelho}}</td>
+          <td>{{dbs.valorServico}}</td>
+          <td>{{dbs.Entrega}}</td>
+          <td>{{dbs.formaPagamento}}</td>
           <td>
-              <a href="" class="btn btn-dark"> Visualizar</a>
+              <a href="/view/{{dbs.id}}" class="btn btn-dark"> Visualizar</a>
               <a href="" class="btn btn-primary"> Editar</a>
               <a href="" class="btn btn-danger"> Deletar</a>
           </td>
         </tr>
-        {% endfor%}
+        {% endfor %}
       </tbody>
     </table>
     </div>

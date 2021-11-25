@@ -20,3 +20,9 @@ def create(request):
     if form.is_valid():
         form.save()
         return redirect('home')
+
+
+def view(request, pk):
+    data = {}
+    data['db'] = Clientes.objects.get(pk=pk)
+    return render(request, 'view.html', data)

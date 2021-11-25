@@ -16,9 +16,13 @@
             {% csrf_token %}
             <!--{{form.as_p}}-->
             <div class="form-group mt-4">Nome do Cliente:  {{form.nomeCliente}}</div>
-            <div class="form-group mt-4">Telefone:  {{form.telefonteCliente}}</div>
+            <div class="form-group mt-4">Telefone:  {{form.telefoneCliente}}</div>
             <div class="form-group mt-4">Endereço:  {{form.enderecoCliente}}</div>
             <div class="form-group mt-4">Eletrodomestico:  {{form.eletrodomestico}}</div>
+            <div class="form-group mt-4">Marca:  {{form.marcaAparelho}} </div>
+            <div class="form-group mt-4">Valor do Serviço:  {{form.valorServico}}</div>
+            <div class="form-group mt-4">Data de Entrega:  {{form.Entrega}}</div>
+            <div class="form-group mt-4">Forma de Pagamento:  {{form.formaPagamento}}</div>
             <br>
             <input type="submit" class="btn btn-success" value="Salvar">
         </form>
